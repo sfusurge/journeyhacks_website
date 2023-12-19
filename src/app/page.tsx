@@ -1,12 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Header from "../../components/Header/Header";
+import CountdownClock from "../../components/CountdownClock/CountdownClock";
 
 export default function Home() {
 	return (
 		// TODO Create navbar
 
 		// TODO Create header
-
 		// TODO Create count-down clock
 
 		// TODO Create General information section
@@ -19,6 +21,10 @@ export default function Home() {
 
 		// TODO Create Team section
 
-		<main>JourneyHacks 2024 is under construction...</main>
+		<div>
+			{Header()}
+			{CountdownClock()}
+			<main>JourneyHacks 2024 is under construction...</main>
+		</div>
 	);
 }
