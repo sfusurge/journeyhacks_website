@@ -19,6 +19,8 @@ export default function Home() {
 
 		// TODO Create Team section
 
-		<main>JourneyHacks 2024 is under construction...</main>
+		<main>
+			<p>JourneyHacks 2024 is under construction...</p>
+		</main>
 	);
 }
