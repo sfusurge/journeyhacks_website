@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Header from "../../components/Header/Header";
-import CountdownClock from "../../components/CountdownClock/CountdownClock";
+import Header from "@/components/Header/Header";
+import CountdownClock from "../components/CountdownClock/CountdownClock";
 
 export default function Home() {
 	return (
