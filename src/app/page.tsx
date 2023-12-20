@@ -21,10 +21,9 @@ export default function Home() {
 
 		// TODO Create Team section
 
-		<div>
-			{Header()}
-			{CountdownClock()}
-			<main>JourneyHacks 2024 is under construction...</main>
+		<div className="flex justify-center align-items-center">
+			<>{Header()}</>
+			<>{CountdownClock()}</>
 		</div>
 	);
 }
