@@ -7,6 +7,10 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		screens: {
+			mobile: { max: "767px" },
+			desktop: "768px", // min-width
+		},
 		extend: {
 			fontFamily: {
 				inter: ["var(--font-inter)"],
