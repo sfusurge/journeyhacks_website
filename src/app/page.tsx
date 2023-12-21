@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Header from "../../components/Header/Header";
+import Header from "../components/Header/Header";
+import General_info from "@/components/General_info/General_info";
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 
 		<main>
 			<p>JourneyHacks 2024 is under construction...</p>
+			<General_info></General_info>
 		</main>
 	);
 }
