@@ -28,6 +28,14 @@ body {
 
 
 @layer components {
+  #footer-links a {
+    @apply hover:underline hover:decoration-wavy opacity-60 hover:opacity-90 focus:opacity-90 transition-all text-sm uppercase tracking-widest;
+  }
+
+  #footer-social-links a {
+    @apply opacity-60 hover:opacity-90 hover:scale-110 focus:scale-110 focus:opacity-90 transition-all; 
+  }
+
   .countdown-snowball {
     @apply bg-[url('/countdown/snowball.svg')] bg-no-repeat bg-center max-w-[14rem] max-h-[14rem] lg:max-w-[20rem] lg:max-h-[20rem] bg-contain flex flex-col items-center justify-center w-full h-auto aspect-square text-[#404070];
   }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../components/Header/Header";
 import General_info from "@/components/General_info/General_info";
 import CountdownClock from "@/components/CountdownClock/CountdownClock";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <p>JourneyHacks 2024 is under construction...</p>
       <CountdownClock />
       <General_info></General_info>
+      <Footer></Footer>
     </main>
   );
 }
