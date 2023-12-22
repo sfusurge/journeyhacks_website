@@ -34,10 +34,19 @@ export default function CountdownClock() {
 	}, []);
 
 	return (
-		<div>
-			<p>{time.days} days</p>
-			<p>{time.hours} hours</p>
-			<p>{time.minutes} minutes</p>
+		<div className="grid place-content-center place-items-center desktop:grid-rows-2 desktop:grid-cols-3 mobile:grid-rows-3 mobile:grid-cols-2 ">
+			<div className="desktop:col-start-1 desktop:row-span-1 mobile:row-start-1 mobile:row-span-1">
+				<div className="flex flex-row">
+					<p>digit 1</p>
+					<p>digit 2</p>
+				</div>
+			</div>
+			<div className="desktop:col-start-2 desktop:col-span-1 mobile:row-start-2 mobile:row-span-1">
+				<div className="flex flex-row">
+					<p>digit 1</p>
+					<p>digit 2</p>
+				</div>
+			</div>
 		</div>
 	);
 }

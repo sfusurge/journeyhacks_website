@@ -21,9 +21,13 @@ export default function Home() {
 
 		// TODO Create Team section
 
-		<div className="flex justify-center align-items-center">
-			<>{Header()}</>
-			<>{CountdownClock()}</>
+		<div className="flex flex-col justify-center align-items-center">
+			<div>
+				<Header />
+			</div>
+			<div>
+				<CountdownClock />
+			</div>
 		</div>
 	);
 }
