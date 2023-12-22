@@ -23,7 +23,7 @@ export default function Home() {
 
     <main>
       <p>JourneyHacks 2024 is under construction...</p>
-      <CountdownClock></CountdownClock>
+      <CountdownClock />
       <General_info></General_info>
     </main>
   );
