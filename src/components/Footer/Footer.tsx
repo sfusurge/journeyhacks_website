@@ -1,5 +1,6 @@
 export default function Footer() {
   return (
+    // TODO: ADD LINKS
     <footer className="bg-[#17172B] px-6 py-10 lg:p-8 lg:py-10 flex flex-col items-center gap-12 lg:gap-8">
       <nav
         aria-label="Social media links"
