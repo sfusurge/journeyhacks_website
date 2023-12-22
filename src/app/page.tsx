@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import General_info from "@/components/General_info/General_info";
 import CountdownClock from "@/components/CountdownClock/CountdownClock";
 import Footer from "@/components/Footer/Footer";
+import FAQ from "@/components/FAQ/FAQ";
 
 export default function Home() {
   return (
@@ -24,8 +25,9 @@ export default function Home() {
 
     <main>
       <p>JourneyHacks 2024 is under construction...</p>
-      <CountdownClock></CountdownClock>
+      <CountdownClock />
       <General_info></General_info>
+      <FAQ />
       <Footer></Footer>
     </main>
   );
