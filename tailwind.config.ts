@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config: Config = {
 	content: [
@@ -10,6 +11,7 @@ const config: Config = {
 		screens: {
 			mobile: { max: "767px" },
 			desktop: "768px", // min-width
+			...defaultTheme.screens,
 		},
 		extend: {
 			fontFamily: {

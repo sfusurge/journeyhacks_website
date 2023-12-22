@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 
 export default function CountdownClock() {
@@ -34,17 +36,30 @@ export default function CountdownClock() {
 	}, []);
 
 	return (
-		<div className="grid place-content-center place-items-center desktop:grid-rows-2 desktop:grid-cols-3 mobile:grid-rows-3 mobile:grid-cols-2 ">
-			<div className="desktop:col-start-1 desktop:row-span-1 mobile:row-start-1 mobile:row-span-1">
-				<div className="flex flex-row">
-					<p>digit 1</p>
-					<p>digit 2</p>
+		<div className="flex flex-col items-center">
+			<h2 className="font-wilden text-5xl mb-1.5">Mark your calendars!</h2>
+			<p className="font-medium font-inter text-lg mb-6">
+				JourneyHacks is happening in...
+			</p>
+
+			<div className="flex flex-col md:flex-row md:gap-6 w-full items-center justify-center">
+				<div className="countdown-snowball -rotate-[5deg]">
+					<span className="font-wilden -mt-2 text-8xl p-16 block">
+						{time.days}
+					</span>
+					<span className="-mt-16 mb-[3rem] font-wilden text-3xl">days</span>
 				</div>
-			</div>
-			<div className="desktop:col-start-2 desktop:col-span-1 mobile:row-start-2 mobile:row-span-1">
-				<div className="flex flex-row">
-					<p>digit 1</p>
-					<p>digit 2</p>
+				<div className="countdown-snowball rotate-[2.5deg]">
+					<span className="font-wilden -mt-2 text-8xl p-16 block">
+						{time.hours}
+					</span>
+					<span className="-mt-16 mb-[3rem] font-wilden text-3xl">hours</span>
+				</div>
+				<div className="countdown-snowball rotate-[10deg]">
+					<span className="font-wilden -mt-2 text-8xl p-16 block">
+						{time.minutes}
+					</span>
+					<span className="-mt-16 mb-[3rem] font-wilden text-3xl">minutes</span>
 				</div>
 			</div>
 		</div>

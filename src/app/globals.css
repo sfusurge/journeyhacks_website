@@ -58,3 +58,10 @@ body {
 		)
 		rgb(var(--background-start-rgb));
 }
+
+
+@layer components {
+  .countdown-snowball {
+    @apply bg-[url('/countdown/snowball.svg')] bg-no-repeat bg-center max-w-[14rem] max-h-[14rem] lg:max-w-[20rem] lg:max-h-[20rem] bg-contain flex flex-col items-center justify-center w-full h-auto aspect-square text-[#404070];
+  }
+}

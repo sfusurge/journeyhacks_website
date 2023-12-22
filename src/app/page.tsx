@@ -1,14 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import Header from "@/components/Header/Header";
-import CountdownClock from "../components/CountdownClock/CountdownClock";
+import Header from "../components/Header/Header";
+import General_info from "@/components/General_info/General_info";
+import CountdownClock from "@/components/CountdownClock/CountdownClock";
 
 export default function Home() {
 	return (
 		// TODO Create navbar
 
 		// TODO Create header
+
 		// TODO Create count-down clock
 
 		// TODO Create General information section
@@ -21,13 +23,9 @@ export default function Home() {
 
 		// TODO Create Team section
 
-		<div className="flex flex-col justify-center align-items-center">
-			<div>
-				<Header />
-			</div>
-			<div>
-				<CountdownClock />
-			</div>
-		</div>
+		<main>
+			<CountdownClock />
+			<General_info />
+		</main>
 	);
 }
