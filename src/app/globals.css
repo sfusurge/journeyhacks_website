@@ -51,17 +51,11 @@
 
 body {
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+	background: #0f0f26;
 }
 
-
 @layer components {
-  .countdown-snowball {
-    @apply bg-[url('/countdown/snowball.svg')] bg-no-repeat bg-center max-w-[14rem] max-h-[14rem] lg:max-w-[20rem] lg:max-h-[20rem] bg-contain flex flex-col items-center justify-center w-full h-auto aspect-square text-[#404070];
-  }
+	.countdown-snowball {
+		@apply bg-[url('/countdown/snowball.svg')] bg-no-repeat bg-center max-w-[14rem] max-h-[14rem] lg:max-w-[20rem] lg:max-h-[20rem] bg-contain flex flex-col items-center justify-center w-full h-auto aspect-square text-[#404070];
+	}
 }

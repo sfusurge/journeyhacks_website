@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Wilden from "next/font/local";
 
 import "./globals.css";
+import { Providers } from "./providers";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -29,7 +30,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} ${wilden.variable}`}>{children}</body>
+			<body className={`${inter.variable} ${wilden.variable}`}>
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	);
 }

@@ -24,6 +24,7 @@ export default function Home() {
 		// TODO Create Team section
 
 		<main>
+			<Header />
 			<CountdownClock />
 			<General_info />
 		</main>
